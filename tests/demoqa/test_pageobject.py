@@ -1,6 +1,6 @@
 import os
 
-from demoqa_test.pages.registration_page import RegisteationPage
+from pages.registration_page import RegisteationPage
 import allure
 
 

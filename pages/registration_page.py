@@ -1,10 +1,4 @@
-import os
-
 from selene import browser, command, have, be
-
-
-from demoqa_test import resource
-
 
 
 class RegisteationPage:
