@@ -1,10 +1,6 @@
 import os
 
-from selene import browser
-from selene.support.conditions import have, be
-
-from demoqa_test import resource
-from demoqa_test.pages.registration_page import RegisteationPage
+from demoqa_test.tests.pages.registration_page import RegisteationPage
 import allure
 
 
