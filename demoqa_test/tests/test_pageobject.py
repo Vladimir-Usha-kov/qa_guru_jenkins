@@ -9,7 +9,7 @@ def test_student_registration_form():
     registration_page = RegisteationPage()
     # Открываем страницу
     with allure.step("Открытие страницы demoqa"):
-        registration_page.open(), "Открывается страница"
+        registration_page.open()
     # Заполняем форму
     with allure.step("Заполнение формы"):
         (
