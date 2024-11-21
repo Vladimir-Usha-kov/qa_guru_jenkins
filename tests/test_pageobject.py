@@ -1,16 +1,18 @@
 import os
 
-from demoqa_test.pages.registration_page import RegisteationPage
+from pages.registration_page import RegisteationPage
 import allure
 
 
 @allure.story("Форма регистрации")
-def test_student_registration_form():
-    registration_page = RegisteationPage()
-    # Открываем страницу
+def test_student_registration_form(setup_browser):
+    registration_page = RegisteationPage(browser=setup_browser)
+
+
     with allure.step("Открытие страницы demoqa"):
         registration_page.open()
-    # Заполняем форму
+
+
     with allure.step("Заполнение формы"):
         (
             registration_page
@@ -29,6 +31,7 @@ def test_student_registration_form():
             .submit()
 
         )
+
     with allure.step("Валидация формы"):
         registration_page.should_registred_user_info(
             'Vladimir Ushakov',

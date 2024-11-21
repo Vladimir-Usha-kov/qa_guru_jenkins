@@ -9,9 +9,10 @@ from demoqa_test import resource
 
 class RegisteationPage:
 
-    def __init__(self):
+    def __init__(self, browser):
         self.city = browser.element('#city')
         self.state = browser.element('#state')
+        self.browser = browser
 
 
     def open(self):
