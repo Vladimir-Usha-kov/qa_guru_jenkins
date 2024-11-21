@@ -9,15 +9,15 @@ from demoqa_test import resource
 
 class RegisteationPage:
 
-    def __init__(self, browser):
+    def __init__(self):
         self.city = browser.element('#city')
         self.state = browser.element('#state')
-        self.browser = browser
+
 
 
     def open(self):
-        self.browser.open('https://demoqa.com/automation-practice-form')
-        return self
+        browser.open('https://demoqa.com/automation-practice-form')
+
 
     def fill_first_name(self, value):
         browser.element('#firstName').should(be.blank).type(value)

@@ -6,7 +6,7 @@ import allure
 
 @allure.story("Форма регистрации")
 def test_student_registration_form(setup_browser):
-    registration_page = RegisteationPage(browser=setup_browser)
+    registration_page = RegisteationPage()
 
 
     with allure.step("Открытие страницы demoqa"):
